@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	transition: background-color 500ms ease-out;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply text-base text-black;
+	font-family: 'Signika Negative', sans-serif;
+}
+
+.disabled {
+	cursor: pointer;
+	opacity: 0.2 !important;
+	pointer-events: none;
+	text-decoration: none;
+}
+
+.item-image {
+	max-width: 135px;
+}
